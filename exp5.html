@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<br>
+<form style="
+    background-color: rgb(180, 210, 72);
+    padding: 30px;
+    width: 400px;
+    margin: auto;
+    border-radius: 15px;
+    background-color:  rgb(195, 226, 84);
+    box-shadow: 0 4px 15px rgb(186, 207, 79);
+    text-align: center;">
+    <h1 align="center">Student Registration Form</h1>
+    <br></br>
+
+    <br><br>
+    <form action="submit_form.php" method="post" style="text-align: center;">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required><br><br>
+
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <label for="course">Course:</label>
+        <select id="course" name="course">
+             <option value="B.tech">B.Tech</option>
+            <option value="M.Tech">M.Tech</option>
+            <option value="MBA">MBA</option>
+        </select><br><br>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="50"></textarea><br><br>
+
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the terms and conditions</label><br><br>
+        <button type="button" for="phone">PHONE NUMBER</button>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br><br>
+        <button type="submit">Submit</button>
+      
+</body>
+</html>
